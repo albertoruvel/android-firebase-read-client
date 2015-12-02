@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coord_layout"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/no_productos"
+        android:text="No hay productos pendientes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/no_productos"
+        android:id="@+id/recycler_view"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content">
+
+
+    </android.support.v7.widget.RecyclerView>
+</android.support.design.widget.CoordinatorLayout>
